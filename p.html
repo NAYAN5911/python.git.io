@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS 12</title>
+    <style>
+        
+            
+::selection { color: rgb(89, 0, 255); }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(255, 255, 255); background-color: rgb(0, 128, 255); border-radius: 5px; border: 5px;">PYTHON PANDAS</h1>
+        <p> 
+          <h1 style="color:forestgreen"> <B> <u> Python Library – Pandas </u></B> </h1>
+           <ul>
+               <li>
+                It is a most famous Python package for data science, which offers
+                powerful and flexible data structures that make data analysis and
+                manipulation easy.
+               </li>
+               <li >Pandas makes data importing and data analyzing
+                much easier.</li>
+                <li>Pandas builds on packages like NumPy and matplotlib
+                    to give us a single & convenient place for data analysis and
+                    visualization work.</li>
+           </ul>
+           <br>
+           
+           <h1 style="color:rgb(246, 141, 2)"> <B> <u> Basic Features of Pandas </u></B> </h1>
+           <p>
+               <ul>
+                   <li> Dataframe object help a lot in keeping track of our data.</li>
+                   <li> With a pandas dataframe, we can have different data types
+                    (float, int, string, datetime, etc) all in one place</li>
+                    <li>Pandas has built in functionality for like easy grouping &
+                        easy joins of data, rolling windows</li>
+                        <li> Good IO capabilities; Easily pull data from a MySQL
+                            database directly into a data frame</li>
+                            <li> With pandas, you can use patsy for R-style syntax in
+                                doing regressions.</li>
+                                <li> Tools for loading data into in-memory data objects from
+                                    different file formats.</li>
+                                    <li>Data alignment and integrated handling of missing data.</li>
+                                    <li>Reshaping and pivoting of data sets.</li>
+                                    <li>Label-based slicing, indexing and subsetting of large data
+                                        sets.</li>
+
+               </ul>
+           </p>
+
+            <B style="color:rgb(255, 2, 255)"> <u>  <h1> <B> <u> Python Library – Pandas </u></B> </h1> </u></B> 
+                  <p>Two important data structures of pandas are–Series, DataFrame</p>
+                  <ul>
+                      <li>Series</li>
+                        <p>  Series is like a one-dimensional array like structure with
+                        homogeneous data. For example, the following series is a
+                        collection of integers</p>
+                        <img src="111.png" alt="">
+            
+                  </ul>
+                  <h2 style="color:rgb(255, 0, 0)">Basic feature of series</h2>
+                  <ul>
+                      <li>Heterogeneous data</li>
+                      <li>Size Mutable</li>
+                      <li>Data Mutable</li>
+                  </ul>
+                  <B style="color:rgb(59, 95, 0)"> <u>  <h1> <B> <u> Pandas Series </u></B> </h1> </u></B> 
+                  <p>It is like one-dimensional array capable of holding data
+                    of any type (integer, string, float, python objects, etc.).
+                    Series can be created using constructor.
+                    Syntax :- pandas.Series( data, index, dtype, copy)
+                    Creation of Series is also possible from – ndarray,
+                    dictionary, scalar value.
+                    Series can be created using</p>
+                    <ul>
+                        <li>Array</li>
+                        <li>Dict</li>
+                        <li>Scalar value or constant</li>
+                    </ul>
+                    <B style="color:rgb(27, 2, 255)"> <u>  <h1> <B> <u> CREATING EMPTY SERIES </u></B> </h1> </u></B> 
+                    <P style="border:;">
+                        <pre style="border:groove; color: rgb(14, 14, 14);">import pandas as pd
+a=pd.Series()
+print(a)</pre>
+<h3>output</h3>
+<p>Series([], dtype: float64)</p>
+                    </P>
+                    <a href="online.html" style="text-transform: uppercase; text-decoration: none; color: grey  ; border: groove;" target="_blank">try yourself</a>
+</p>
+<p>
+    <B style="color:rgb(211, 44, 44)">  <h1> <B>  SERIES WITHOUT INDEX </B> </h1> </B> 
+    <pre style="border:groove; color: rgb(14, 14, 14);">
+import pandas as pd1
+import numpy as np1
+data = np1.array(['a','b','c','d'])
+s = pd1.Series(data)
+print(s)</pre>
+        <h3>output</h3>
+        <pRE>
+            1 a
+            2 b
+            3 c
+            4 d
+            dtype: object
+            Note : default index is starting
+            from 0</pRE>
+            <a href="online.html" style="text-transform: uppercase; text-decoration: none; color: grey  ; border: groove;" target="_blank">try yourself</a>
+            <B style="color:rgb(77, 211, 44)">  <h1> <B>  SERIES WITH INDEX </B> </h1> </B> 
+            <pre style="border:groove; color: rgb(14, 14, 14);">
+ import pandas as p1
+import numpy as np1
+data = np1.array(['a','b','c','d'])
+s = p1.Series(data,index=[100,101,102,103])
+print(s)</pre>
+                <h3>output</h3>
+                <pRE>
+                    100 a
+                    101 b
+                    102 c
+                    103 d dtype:
+                    object</pRE>
+                    <a href="online.html" style="text-transform: uppercase; text-decoration: none; color: grey  ; border: groove;" target="_blank">try yourself</a>
+        
+</p>
+</body>
+</html>
